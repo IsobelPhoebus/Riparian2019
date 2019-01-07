@@ -1,0 +1,41 @@
+---
+title: "Riparian_2019"
+author: "Isobel Phoebus"
+date: "January 7, 2019"
+output: html_document
+---
+
+```{r Install and Load Packages}
+
+#' Install packages
+if("knitr" %in% rownames(installed.packages()) == FALSE){install.packages("knitr")}
+if("lubridate" %in% rownames(installed.packages()) == FALSE){install.packages("lubridate")}
+if("maptools" %in% rownames(installed.packages()) == FALSE){install.packages("maptools")}
+if("raster" %in% rownames(installed.packages()) == FALSE){install.packages("raster")}
+if("move" %in% rownames(installed.packages()) == FALSE){install.packages("move")}
+if("amt" %in% rownames(installed.packages()) == FALSE){install.packages("amt")}
+if("ggmap" %in% rownames(installed.packages()) == FALSE){install.packages("ggmap")}
+if("tibble" %in% rownames(installed.packages()) == FALSE){install.packages("tibble")}
+if("leaflet" %in% rownames(installed.packages()) == FALSE){install.packages("leaflet")}
+if("dplyr" %in% rownames(installed.packages()) == FALSE){install.packages("dplyr")}
+
+if("ggplot2" %in% rownames(installed.packages()) == FALSE){install.packages("ggplot2")}
+
+
+#' Load libraries
+#+warning=FALSE, message=FALSE
+library(knitr)
+library(lubridate)
+library(maptools)
+library(raster)
+library(move)
+library(amt) 
+library(ggmap)
+library(tibble)
+library(leaflet)
+library(dplyr)
+options(width=165,digits.secs = 3)
+opts_chunk$set(fig.width=12,fig.height=4.5, error=TRUE,cache = F)
+
+library(ggplot2)
+```
